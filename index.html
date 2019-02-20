@@ -2,14 +2,47 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Movies | App</title>
-	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Movies | App</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
 </head>
 <body>
-	<div id="app">
-		
+	<header>
+			<a href="#" class="logo">
+				<img src="/public/img/tiff_logo.png" alt="">
+			</a> 
+	</header>
+	<div class="spacer"></div>
+	<div class="movie--film-released">
+		<img class="movie--icon" src="/public/img/movie_icon.png" alt="movies">
+		<h1 class="movie--title">Full-Stack Masterclass Tech Challenge</h1>
 	</div>
+
+	<main id="app">
+	</main>
+	<footer>
+		<div class="movie-footer">
+			<div class="movie-footer__resources">
+				<div class="movie-footer__resources--brandlogo">
+					<img src="/public/img/tiff_logo-wht.png" alt="tiff_logo">
+				</div>
+				<div class="movie-footer__resources--project-owners">
+					<div class="brand--hackeryou">
+						<img src="/public/img/logo-hackeryou.svg" alt="HackerYou logo">
+						<p>We’re on a mission to deliver the best web development learning experiences in Toronto. At HackerYou, you get more than just a couple of awesome projects for your portfolio. When you make the decision to learn with us, you’re taking a big leap. It means you're ready for change in your professional life. Our goal is to give you the tools necessary to succeed. With that vision in mind, the HackerYou experience is tailored to you, and that’s why we’re the top-rated tech school in Toronto.</p>
+					</div>
+					<div class="brand--rbonney">
+						@rbonney services
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 	<script src="/public/scripts/app.js"></script>
 </body>
 </html>

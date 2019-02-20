@@ -1,0 +1,215 @@
+//Vars
+$font-stack: 'Roboto', sans-serif;
+$primary-color: #000;
+$primary-red: #ff4822;
+$primary-grey: #999999;
+$primary-white: #fff;
+$align-centre: center;
+$margin-centre: 0 auto;
+
+//Resets
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+* {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+body,
+.movie--film-released,
+  #app,
+  .movie-footer{width: 100%;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	
+	.movie--film-released,
+  #app,
+  .movie-footer{width: 992px;margin: 0 auto;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	
+	.movie--film-released,
+  #app,
+  .movie-footer{width: 1200px;margin: 0 auto;}
+}
+//Main
+
+body{
+	font-family: $font-stack;
+	color: $primary-color;
+	font-size: 19px;
+	font-weight: 400;
+	margin: $margin-centre;
+}
+
+
+header{
+	background: #fff;
+	width: 100%;
+	height: 76px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid $primary-color;
+	z-index: 100;
+}
+.logo img{
+
+	margin: 20px;
+	float: left;
+	width: 65px;
+	height: 40px;
+	display: block;
+
+}
+.movie{
+	&--film-released{
+		padding:0 20px;
+		@media only screen and (min-width: 677px){
+			img,h1{display: inline-block;}
+		}
+		@media only screen and (max-width: 676px){
+		//background: red;
+			width: 100%;
+			text-align: $align-centre;
+		img, h1{
+				display: block;
+			}
+			img{
+				margin: 0 auto;
+			}
+			h1{
+				width: 100%;
+				padding-top: 20px;
+			}
+		}
+	}
+	&--icon,
+	&--title{
+		display: inline-block;
+	}
+	&--icon{
+		vertical-align: middle;
+			width: 105px;
+		@media only screen and (max-width: 992px){
+		}
+	}
+	&--title{
+		font-size: 42px;
+		color: $primary-grey;
+	    font-weight: 400;
+	    width: 75%;
+	    padding-left: 30px;
+	}
+}
+
+.spacer{
+	margin: 100px 0px;
+}
+#app{
+	clear: both;
+	.card{
+		width: 300px;
+		margin: 30px 15px;
+		float: left;
+		@media only screen and (min-width: 1200px){
+			margin: 30px 45px;
+		}
+		@media only screen and (max-width: 674px) {
+			float: none;
+			margin: 30px auto;
+		}
+		 .card-image {
+		 	img{
+		 		width: 300px!important;
+		 	}
+		 }
+		 .card-title{
+		 	font-size: 19px;
+		 	font-weight: 400;
+		    white-space: nowrap;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		 }
+		 .card-subTitle{
+			font-weight: 400;
+			padding: 15px 0;
+			border-bottom: 1px solid #000;
+			.right{
+				font-weight: 700;
+			}
+		 }
+		 .card-reveal{
+		 	p{
+		 		font-weight: 300;
+		 		font-size: 19px;
+		 		padding: 15px 0;
+		 	}
+		 	div{
+		 		text-align: $align-centre;
+				img{
+					width: 80px;
+					padding: 20px 0px;
+				}
+		 	}
+		 }
+
+	}
+
+
+}
+
+//Footer
+footer{
+	background: $primary-color;
+	color: $primary-white;
+	padding: 70px 0;
+	clear: both;
+	.movie-footer{
+		&__resources{
+
+			&--brandlogo{
+				text-align:$align-centre;
+				img{width: 80px;} 
+			}
+			&--project-owners{
+				.brand{
+
+					&--hackeryou{
+						margin-top: 30px;
+						img{width: 120px; height: 120px;display: inline-block;vertical-align: middle;}
+						p{   
+							width: 70%;
+						    font-size: 12px;
+						    font-weight: 300;
+						    padding-left: 41px;
+						    padding-top: 20px;
+						    display: inline-block;
+						}
+						@media only screen and (max-width: 768px){
+							text-align: $align-centre;
+							img,
+							p{display: block;margin: 0 auto;width: 100%;}
+							p{padding-left: 20px;padding-right: 20px;}
+
+						}
+					}
+					&--rbonney{margin-top: 30px; text-align:$align-centre; }
+				}
+			}
+		}
+	}
+}
