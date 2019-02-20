@@ -1,0 +1,203 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+:focus {
+  outline: 0; }
+
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+[class*="col-"] {
+  float: left;
+  padding: 15px; }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body,
+  .movie--film-released,
+  #app,
+  .movie-footer {
+    width: 100%; } }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .movie--film-released,
+  #app,
+  .movie-footer {
+    width: 992px;
+    margin: 0 auto; } }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .movie--film-released,
+  #app,
+  .movie-footer {
+    width: 1200px;
+    margin: 0 auto; } }
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  font-size: 19px;
+  font-weight: 400;
+  margin: 0 auto; }
+
+header {
+  background: #fff;
+  width: 100%;
+  height: 76px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #000;
+  z-index: 100; }
+
+.logo img {
+  margin: 20px;
+  float: left;
+  width: 65px;
+  height: 40px;
+  display: block; }
+
+.movie--film-released {
+  padding: 0 20px; }
+  @media only screen and (min-width: 677px) {
+    .movie--film-released img, .movie--film-released h1 {
+      display: inline-block; } }
+  @media only screen and (max-width: 676px) {
+    .movie--film-released {
+      width: 100%;
+      text-align: center; }
+      .movie--film-released img, .movie--film-released h1 {
+        display: block; }
+      .movie--film-released img {
+        margin: 0 auto; }
+      .movie--film-released h1 {
+        width: 100%;
+        padding-top: 20px; } }
+
+.movie--icon, .movie--title {
+  display: inline-block; }
+
+.movie--icon {
+  vertical-align: middle;
+  width: 105px; }
+
+.movie--title {
+  font-size: 42px;
+  color: #999999;
+  font-weight: 400;
+  width: 75%;
+  padding-left: 30px; }
+
+.spacer {
+  margin: 100px 0px; }
+
+#app {
+  clear: both; }
+  #app .card {
+    width: 300px;
+    margin: 30px 15px;
+    float: left; }
+    @media only screen and (min-width: 1200px) {
+      #app .card {
+        margin: 30px 45px; } }
+    @media only screen and (max-width: 674px) {
+      #app .card {
+        float: none;
+        margin: 30px auto; } }
+    #app .card .card-image img {
+      width: 300px !important; }
+    #app .card .card-title {
+      font-size: 19px;
+      font-weight: 400;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    #app .card .card-subTitle {
+      font-weight: 400;
+      padding: 15px 0;
+      border-bottom: 1px solid #000; }
+      #app .card .card-subTitle .right {
+        font-weight: 700; }
+    #app .card .card-reveal p {
+      font-weight: 300;
+      font-size: 19px;
+      padding: 15px 0; }
+    #app .card .card-reveal div {
+      text-align: center; }
+      #app .card .card-reveal div img {
+        width: 80px;
+        padding: 20px 0px; }
+
+footer {
+  background: #000;
+  color: #fff;
+  padding: 70px 0;
+  clear: both; }
+  footer .movie-footer__resources--brandlogo {
+    text-align: center; }
+    footer .movie-footer__resources--brandlogo img {
+      width: 80px; }
+  footer .movie-footer__resources--project-owners .brand--hackeryou {
+    margin-top: 30px; }
+    footer .movie-footer__resources--project-owners .brand--hackeryou img {
+      width: 120px;
+      height: 120px;
+      display: inline-block;
+      vertical-align: middle; }
+    footer .movie-footer__resources--project-owners .brand--hackeryou p {
+      width: 70%;
+      font-size: 12px;
+      font-weight: 300;
+      padding-left: 41px;
+      padding-top: 20px;
+      display: inline-block; }
+    @media only screen and (max-width: 768px) {
+      footer .movie-footer__resources--project-owners .brand--hackeryou {
+        text-align: center; }
+        footer .movie-footer__resources--project-owners .brand--hackeryou img,
+        footer .movie-footer__resources--project-owners .brand--hackeryou p {
+          display: block;
+          margin: 0 auto;
+          width: 100%; }
+        footer .movie-footer__resources--project-owners .brand--hackeryou p {
+          padding-left: 20px;
+          padding-right: 20px; } }
+  footer .movie-footer__resources--project-owners .brand--rbonney {
+    margin-top: 30px;
+    text-align: center; }
